@@ -29,12 +29,19 @@ export default function Login() {
 
   return (
     <div className='min-h-screen flex items-center justify-center bg-gray-100'>
+
+
+
+
       <form onSubmit={handleSubmit} className='bg-white p-6 rounded shadow-md w-80'>
        <div className="flex justify-between items-center">
        <h2 className='text-xl font-bold mb-4'>Login</h2>
        <h2  onClick={() => navigate('/register')} className='text-xl bg-blue-500 px-4 py-2 hover:bg-blue-800 transition duration-300 text-white font-bold mb-4'>Create</h2>
-       </div>
+       </div>  
+       <span className='text-black font-bold  text-sm'>demo@ExcellenceTech.com</span>
         <input type='email' name='email' placeholder='Email' className='border p-2 w-full mb-2' onChange={handleChange} required />
+
+       <span className='text-black font-bold text-sm'>demo</span>
         <input type='password' name='password' placeholder='Password' className='border p-2 w-full mb-2' onChange={handleChange} required />
         <button type='submit' className='bg-green-500 text-white p-2 w-full rounded'>Login</button>
       </form>
