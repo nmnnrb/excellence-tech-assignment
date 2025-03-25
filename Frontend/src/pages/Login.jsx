@@ -38,10 +38,10 @@ export default function Login() {
        <h2 className='text-xl font-bold mb-4'>Login</h2>
        <h2  onClick={() => navigate('/register')} className='text-xl bg-blue-500 px-4 py-2 hover:bg-blue-800 transition duration-300 text-white font-bold mb-4'>Create</h2>
        </div>  
-       <span className='text-black font-bold  text-sm'>demo@ExcellenceTech.com</span>
+    <span className='text-sm text-black'>  Email:  <span className='text-black font-bold  text-xs'>demo@ExcellenceTech.com</span></span>
         <input type='email' name='email' placeholder='Email' className='border p-2 w-full mb-2' onChange={handleChange} required />
 
-       <span className='text-black font-bold text-sm'>demo</span>
+        <span className='text-sm text-black'>  Password:  <span className='text-black font-bold  text-xs'>demo@ExcellenceTech.com</span></span>
         <input type='password' name='password' placeholder='Password' className='border p-2 w-full mb-2' onChange={handleChange} required />
         <button type='submit' className='bg-green-500 text-white p-2 w-full rounded'>Login</button>
       </form>
