@@ -20,7 +20,7 @@ const TodoList = () => {
                     return;
                 }
 
-                const response = await axios.get("http://localhost:8080/todos", {
+                const response = await axios.get("https://excellence-tech-assignment.onrender.com/todos", {
                     headers: { Authorization: `Bearer ${token}` }
                 });
 
@@ -42,7 +42,7 @@ const TodoList = () => {
                 return;
             }
 
-            await axios.delete(`http://localhost:8080/todos/${id}`, {
+            await axios.delete(`https://excellence-tech-assignment.onrender.com/todos/${id}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
 

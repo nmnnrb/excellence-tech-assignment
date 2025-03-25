@@ -1,7 +1,7 @@
 import axios from 'axios';
 export default function TodoItem({ todo, setTodos }) {
   const deleteTodo = () => {
-    axios.delete(`http://localhost:5000/todos/${todo._id}`, {
+    axios.delete(`https://excellence-tech-assignment.onrender.com/todos/${todo._id}`, {
       headers: { Authorization: localStorage.getItem('token') }
     }).then(() => setTodos(prev => prev.filter(t => t._id !== todo._id)));
   };

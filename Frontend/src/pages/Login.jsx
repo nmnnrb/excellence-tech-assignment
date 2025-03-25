@@ -19,7 +19,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8080/auth/login', user);
+      const res = await axios.post('https://excellence-tech-assignment.onrender.com/auth/login', user);
       localStorage.setItem('token', res.data.token);
       navigate('/todos');
     } catch (err) {

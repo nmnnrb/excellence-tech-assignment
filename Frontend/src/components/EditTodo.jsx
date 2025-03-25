@@ -26,7 +26,7 @@ const EditTodo = () => {
                     return;
                 }
 
-                const response = await axios.get(`http://localhost:8080/todos/${id}`, {
+                const response = await axios.get(`https://excellence-tech-assignment.onrender.com/todos/${id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
 
@@ -54,7 +54,7 @@ const EditTodo = () => {
                 return;
             }
 
-            await axios.put(`http://localhost:8080/todos/${id}`, todo, {
+            await axios.put(`https://excellence-tech-assignment.onrender.com/todos/${id}`, todo, {
                 headers: { Authorization: `Bearer ${token}` }
             });
 

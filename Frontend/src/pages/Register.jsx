@@ -13,7 +13,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/auth/register', user);
+      await axios.post('https://excellence-tech-assignment.onrender.com/auth/register', user);
       navigate('/');
     } catch (err) {
       console.error(err);

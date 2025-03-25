@@ -7,7 +7,7 @@ export default function Home() {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/todos', {
+    axios.get('https://excellence-tech-assignment.onrender.com/todos', {
       headers: { Authorization: localStorage.getItem('token') }
     }).then(res => setTodos(res.data));
   }, []);
