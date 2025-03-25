@@ -41,7 +41,7 @@ export default function Login() {
     <span className='text-sm text-black'>  Email:  <span className='text-black font-bold  text-xs'>demo@ExcellenceTech.com</span></span>
         <input type='email' name='email' placeholder='Email' className='border p-2 w-full mb-2' onChange={handleChange} required />
 
-        <span className='text-sm text-black'>  Password:  <span className='text-black font-bold  text-xs'>demo@ExcellenceTech.com</span></span>
+        <span className='text-sm text-black'>  Password:  <span className='text-black font-bold  text-xs'>demo</span></span>
         <input type='password' name='password' placeholder='Password' className='border p-2 w-full mb-2' onChange={handleChange} required />
         <button type='submit' className='bg-green-500 text-white p-2 w-full rounded'>Login</button>
       </form>
